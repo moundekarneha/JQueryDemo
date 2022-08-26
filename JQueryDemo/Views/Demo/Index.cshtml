@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Hello From Index  </h1>
+        <br />
+        <input type="text" id="txt1" />
+        <br />
+        <input type="text" id="txt2" />
+        <br />
+        <label id="lbl"></label>
+
+        <input type="button" value="click me" onclick="newfun()" />
+    </div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+
+        //alert("Hey")
+         
+    })
+
+    function newfun() {
+        var value = $("#txt1").val()
+        $("#txt2").val(value)
+        $("#lbl").text("New Text");
+    }
+</script>
